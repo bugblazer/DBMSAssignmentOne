@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdul Rehman - 041</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── Card ── -->
+  <div class="card">
+
+    <!-- Header -->
+    <div class="card-header">
+      <div class="header-badge">University Of Central Punjab</div>
+      <h1>Student <span>Registration</span></h1>
+      <p>Student Result Management System — Data Entry Form</p>
+    </div>
+
+    <!-- Body / Form -->
+    <div class="card-body">
+      <form id="regForm" novalidate>
+        <div class="form-grid">
+
+          <!-- Full Name -->
+          <div class="field full">
+            <label>Full Name <span class="req">*</span></label>
+            <input type="text" name="name" placeholder="e.g. Abdul" required>
+          </div>
+
+          <!-- Roll Number -->
+          <div class="field">
+            <label>Roll Number <span class="req">*</span></label>
+            <input type="text" name="roll_no" placeholder="e.g. G1F24UBSCS041" required>
+          </div>
+
+          <!-- Date of Birth -->
+          <div class="field">
+            <label>Date of Birth <span class="req">*</span></label>
+            <input type="date" name="dob" required>
+          </div>
+
+          <!-- Email -->
+          <div class="field full">
+            <label>Email Address <span class="req">*</span></label>
+            <input type="email" name="email" placeholder="e.g. abdul@email.com" required>
+          </div>
+
+          <!-- Program -->
+          <div class="field full">
+            <label>Program <span class="req">*</span></label>
+            <div class="select-wrap">
+              <select name="program" required>
+                <option value="" disabled selected>Select your program</option>
+                <option value="BS-CS">BSCS</option>
+                <option value="BS-SE">BSSE</option>
+                <option value="BS-IT">BSIT</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Divider -->
+          <div class="divider">Student Type</div>
+
+          <!-- Student Type -->
+          <div class="field full">
+            <label>Enrollment Mode <span class="req">*</span></label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="type" value="full" required>
+                Full-Time
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="type" value="part">
+                Part-Time
+              </label>
+            </div>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn-submit">
+            <span class="btn-inner">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              Register Student
+            </span>
+          </button>
+
+          <p class="form-note">
+            Fields marked <strong style="color:var(--gold)">*</strong> are required.
+            No data is submitted to any server.
+          </p>
+
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ── Success Modal ── -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal">
+      <div class="modal-check">✅</div>
+      <h2>Registration Successful</h2>
+      <p>The student record has been captured. In a live system, this would be sent to the database.</p>
+      <button class="modal-close" onclick="closeModal()">Done</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
