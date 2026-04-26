@@ -9,46 +9,38 @@
 </head>
 <body>
 
-  <!-- ── Card ── -->
   <div class="card">
 
-    <!-- Header -->
     <div class="card-header">
       <div class="header-badge">University Of Central Punjab</div>
       <h1>Student <span>Registration</span></h1>
       <p>Student Result Management System — Data Entry Form</p>
     </div>
 
-    <!-- Body / Form -->
     <div class="card-body">
       <form id="regForm" novalidate>
         <div class="form-grid">
 
-          <!-- Full Name -->
           <div class="field full">
             <label>Full Name <span class="req">*</span></label>
             <input type="text" name="name" placeholder="e.g. Abdul" required>
           </div>
 
-          <!-- Roll Number -->
           <div class="field">
             <label>Roll Number <span class="req">*</span></label>
             <input type="text" name="roll_no" placeholder="e.g. G1F24UBSCS041" required>
           </div>
 
-          <!-- Date of Birth -->
           <div class="field">
             <label>Date of Birth <span class="req">*</span></label>
             <input type="date" name="dob" required>
           </div>
 
-          <!-- Email -->
           <div class="field full">
             <label>Email Address <span class="req">*</span></label>
             <input type="email" name="email" placeholder="e.g. abdul@email.com" required>
           </div>
 
-          <!-- Program -->
           <div class="field full">
             <label>Program <span class="req">*</span></label>
             <div class="select-wrap">
@@ -61,10 +53,8 @@
             </div>
           </div>
 
-          <!-- Divider -->
           <div class="divider">Student Type</div>
 
-          <!-- Student Type -->
           <div class="field full">
             <label>Enrollment Mode <span class="req">*</span></label>
             <div class="radio-group">
@@ -79,7 +69,6 @@
             </div>
           </div>
 
-          <!-- Submit -->
           <button type="submit" class="btn-submit">
             <span class="btn-inner">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -99,7 +88,6 @@
     </div>
   </div>
 
-  <!-- ── Success Modal ── -->
   <div class="modal-overlay" id="successModal">
     <div class="modal">
       <div class="modal-check">✅</div>
