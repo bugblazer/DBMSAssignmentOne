@@ -28,7 +28,6 @@ body {
     radial-gradient(ellipse 60% 50% at 90% 100%, rgba(15,28,63,.08) 0%, transparent 60%);
 }
 
-/* ── Card ── */
 .card {
   width: 100%;
   max-width: 580px;
@@ -44,7 +43,6 @@ body {
   to   { opacity:1; transform:translateY(0)    scale(1);   }
 }
 
-/* ── Header ── */
 .card-header {
   background: var(--navy);
   padding: 36px 40px 32px;
@@ -95,7 +93,6 @@ body {
   font-weight: 300;
 }
 
-/* ── Body ── */
 .card-body { padding: 36px 40px 40px; }
 
 .form-grid {
@@ -147,7 +144,6 @@ select:focus {
 
 input::placeholder { color: #b0b8c9; }
 
-/* ── Select arrow ── */
 .select-wrap { position: relative; }
 .select-wrap::after {
   content: '▾';
@@ -161,7 +157,6 @@ input::placeholder { color: #b0b8c9; }
 }
 .select-wrap select { padding-right: 34px; }
 
-/* ── Divider ── */
 .divider {
   grid-column: 1 / -1;
   display: flex;
@@ -180,7 +175,6 @@ input::placeholder { color: #b0b8c9; }
   background: var(--border);
 }
 
-/* ── Radio group ── */
 .radio-group { display: flex; gap: 12px; }
 
 .radio-option {
@@ -231,7 +225,6 @@ input::placeholder { color: #b0b8c9; }
 .radio-option input[type="radio"]:checked { border-color: var(--navy); }
 .radio-option input[type="radio"]:checked::after { transform: scale(1); }
 
-/* ── Submit button ── */
 .btn-submit {
   grid-column: 1 / -1;
   width: 100%;
@@ -271,7 +264,6 @@ input::placeholder { color: #b0b8c9; }
 .btn-inner { display: flex; align-items: center; justify-content: center; gap: 8px; }
 .btn-inner svg { width: 18px; height: 18px; }
 
-/* ── Form note ── */
 .form-note {
   grid-column: 1 / -1;
   text-align: center;
@@ -280,7 +272,6 @@ input::placeholder { color: #b0b8c9; }
   margin-top: 4px;
 }
 
-/* ── Modal ── */
 .modal-overlay {
   display: none;
   position: fixed;
@@ -346,7 +337,6 @@ input::placeholder { color: #b0b8c9; }
 }
 .modal-close:hover { background: var(--navy-m); }
 
-/* ── Responsive ── */
 @media (max-width: 520px) {
   .card-header, .card-body { padding-left: 24px; padding-right: 24px; }
   .form-grid { grid-template-columns: 1fr; }
